@@ -1,0 +1,25 @@
+.navbar {
+  padding: 25px 0;
+  background-color: #012917;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #7bd88f;
+  background-color: rgba(123, 216, 143, 0.15);
+  box-shadow: 0 0 8px rgba(123, 216, 143, 0.6);
+  border-radius: 8px;
+}

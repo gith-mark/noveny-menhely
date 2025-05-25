@@ -1,0 +1,79 @@
+.plant-list {
+  padding: 0;
+}
+
+.plant-card {
+  list-style: none;
+  background-color: #f5fff9;
+  border-left: 5px solid #7bd88f;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(1, 41, 23, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.plant-card:hover {
+  transform: translateY(-3px);
+}
+
+.plant-card h4 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  color: #012917;
+}
+
+.plant-card p {
+  margin: 4px 0;
+  font-size: 1rem;
+}
+
+.plant-buttons {
+  margin-top: 10px;
+}
+
+.plant-buttons button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #256d48;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.plant-buttons button:hover {
+  background-color: #389e6e;
+}
+
+.add-plant-form {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.add-plant-form input {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex: 1 1 200px;
+}
+
+.add-plant-form button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #012917;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-plant-form button:hover {
+  background-color: #145a39;
+}

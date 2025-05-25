@@ -1,0 +1,177 @@
+/* Alap stílusok */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #012917;
+  background-color: #f8fdf7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+
+nav {
+  background-color: #012917;
+  padding: 15px 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  font-weight: bold;
+  font-size: 18px;
+  color: #e6e6e6;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #4caf50;
+}
+
+/* Home */
+
+.home-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 100px;
+  color: #015a32;
+}
+
+.home-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Services */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+  transition: transform 0.3s;
+  cursor: default;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card h3 {
+  margin-top: 0;
+  color: #015a32;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Contact */
+
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  color: #012917;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #012917;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 8px #4caf50;
+}
+
+button {
+  margin-top: 25px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+/* Reszponzív */
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  nav ul li {
+    margin-left: 0;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
